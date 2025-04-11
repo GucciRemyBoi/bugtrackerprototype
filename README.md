@@ -56,19 +56,27 @@ This is the core of the project, responsible for routing, logic, and data manage
 - Loads all JSON bug files from the `bugs/` directory
 - Renders `index.html` with a table view of all bugs
 
+![image](https://github.com/user-attachments/assets/1e1e091a-27a3-4a99-810a-da942548a4bc)
+
 ### `reportBug()`
 - Handles GET/POST
 - GET: renders the form to file a new bug
 - POST: processes form inputs, handles optional file upload, saves data to a JSON file, simulates a user with `"Created By": "Lorenz"`
+
+![image](https://github.com/user-attachments/assets/68729b1e-1df9-4fa2-8c2b-a155d3db2d0e)
 
 ### `updateBug(bugId)`
 - Handles GET/POST
 - GET: loads bug and renders update form
 - POST: updates status and timestamp
 
+![image](https://github.com/user-attachments/assets/7b649924-8b02-41d2-ad4d-51c4ee892610)
+
 ### `viewBug(bugId)`
 - Renders all bug details (description, GitHub, attachment, etc.)
 - Returns 404 if bug does not exist
+
+![image](https://github.com/user-attachments/assets/de9d1631-a06b-413d-8274-42334573b1e5)
 
 ### `uploadedFile(filename)`
 - Securely serves attachment download via `/uploads/<filename>`
