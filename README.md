@@ -1,5 +1,6 @@
 # Bug Tracker Web
 # Author: Lorenz V. Wilkins
+# Original Project: https://github.com/GucciRemyBoi/Bug-Tracker
 ## Stack
 **Backend**: Python (Flask)  
 **Frontend**: HTML, Bootstrap (will migrate to TailwindCSS + React)  
